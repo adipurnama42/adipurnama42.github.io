@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Festiva</title>
+
+    <!-- Bootstrap 4 - CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- End Bootstrap 4 - CSS -->
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body class="bg__img">
+    <div class="wrapper">
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="header pb-1 background__entrance_tiket">
+
+                <nav class="navbar navbar-dark navbar__z">
+                    <a href="akses.html" class="navbar__menu text-white font-weight-bold">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.57 5.92993L3.5 11.9999L9.57 18.0699" stroke="white" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.5 12H3.66998" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </nav>
+                <div class="row justify-content-center align-items-center m-0 mt-3 mb-5">
+                    <div class="col-10 col-md-8 col-lg-6 col-xl-4">
+                        <div class="card custome__card_transparant">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content bg-light">
+                <div class="row justify-content-center align-items-center m-0">
+                    <div class="col-11">
+                        <div class="card custome__card__content mt-5 mb-5">
+                            <div class="card-body pt-4 pb-4 entrance__tiket_content m-3">
+                                <h6 class="text-center mb-3">Youth Fest 2021 - Tiket Harian</h6>
+                                <p class="text-center">
+                                    Pilih tanggal untuk melihat ketersediaan tiket. Persediaan
+                                    tiket terbatas demi tetap mematuhi protokol kesehatan
+                                </p>
+
+                                <div class="slot__tiket">
+                                    <span>Ketersediaan</span>
+                                    <span class="jml__tiket"><b>1000 Peserta</b></span>
+                                </div>
+                                <div class="date__tiket">
+                                    <label for="date" class="d-block">Pilih tanggal </label>
+                                    <input type="date" name="" id="date" class="d-block btn-block">
+                                </div>
+
+                                <p class="text-justify mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                    Sit velit ultricies volutpat id nibh ligula et enim. Facilisis nisi, dolor vitae at
+                                    lacinia gravida mauris at. Adipiscing eget augue scelerisque cursus lacus, eget.</p>
+
+                                <a href="entrance-tiket-checkout.html" type="button"
+                                    class="btn__blue_gradient_small d-block btn-block">Pesan
+                                    tiket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+
+    <!-- Bootstrap 4 - JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- End Bootstrap 4 - CSS -->
+
+    <!-- JS Sidebar -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <!-- End JS Sidebar -->
+</body>
+
+</html>
