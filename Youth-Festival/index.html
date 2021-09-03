@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Festiva</title>
+
+    <!-- Bootstrap 4 - CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- End Bootstrap 4 - CSS -->
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+
+<body class="bg__landingpage">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+
+            <div class="sidebar__menu">
+                <a href="syarat-ketentuan.html">
+                    <svg width="20" height="20" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.50001 11.9167C9.47918 11.9167 11.9167 9.47921 11.9167 6.50004C11.9167 3.52087 9.47918 1.08337 6.50001 1.08337C3.52084 1.08337 1.08334 3.52087 1.08334 6.50004C1.08334 9.47921 3.52084 11.9167 6.50001 11.9167Z"
+                            stroke="#292D32" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.5 4.33337V7.04171" stroke="#292D32" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6.49701 8.66663H6.50187" stroke="#292D32" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Syarat dan ketentuan</span>
+                </a>
+                <a href="">
+                    <svg width="20" height="20" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.79166 8.44713H5.95832L3.91873 9.80378C3.61623 10.0054 3.20832 9.79005 3.20832 9.42338V8.44713C1.83332 8.44713 0.916656 7.53046 0.916656 6.15546V3.40544C0.916656 2.03044 1.83332 1.11377 3.20832 1.11377H7.79166C9.16666 1.11377 10.0833 2.03044 10.0833 3.40544V6.15546C10.0833 7.53046 9.16666 8.44713 7.79166 8.44713Z"
+                            stroke="#292D32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M5.50002 5.20667V5.11043C5.50002 4.79877 5.69253 4.63376 5.88503 4.50084C6.07295 4.37251 6.26084 4.20751 6.26084 3.90501C6.26084 3.48335 5.92168 3.14417 5.50002 3.14417C5.07835 3.14417 4.7392 3.48335 4.7392 3.90501"
+                            stroke="#292D32" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.49795 6.30204H5.50207" stroke="#292D32" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Tentang Kami</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="header">
+                <nav class="navbar navbar-light bg__white navbar__z shadow-sm">
+                    <button type="button" id="sidebarCollapse" class="navbar__menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center content__landingpage">
+                    <img src="assets/img/dyouth-hd.png" alt="dyout" class="logo__landingpage">
+                    <span>Selamat datang di</span>
+                    <span class="text__gold">Youth Festival 2021</span>
+                    <span class="welcome__landingpage">Silakan masuk/daftar untuk
+                        <br>mengetahui detail Youth Festival 2021
+                    </span>
+                    <a href="login.html" class="navbar__login">Masuk</a>
+                    <a href="register.html" class="navbar__register">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+
+    <!-- Bootstrap 4 - JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- End Bootstrap 4 - CSS -->
+
+    <!-- JS Sidebar -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <!-- End JS Sidebar -->
+</body>
+
+</html>
