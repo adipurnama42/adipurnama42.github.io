@@ -13,7 +13,7 @@ var takePhotoButton;
 var toggleFullScreenButton;
 var switchCameraButton;
 var amountOfCameras = 0;
-var currentFacingMode = 'user';
+var currentFacingMode = 'environment';
 
 // this function counts the amount of video inputs
 // it replaces DetectRTC that was previously implemented.
